@@ -3,5 +3,7 @@ services:
   - docker
 language: python
 python:
-  - "3.4"
+  - 2.7
+before_install: 
+  - apt-get install python-virtualenv
 script: echo test
